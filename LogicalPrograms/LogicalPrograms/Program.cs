@@ -8,7 +8,7 @@ namespace LogicalPrograms
 
             while (true)
             {
-                Console.WriteLine("Select Number\n1)LogicalPrograms\n2)PerfectNumber");
+                Console.WriteLine("Select Number\n1)LogicalPrograms\n2)PerfectNumber\n3)PrimeNumber");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -19,6 +19,10 @@ namespace LogicalPrograms
                     case 2:
                         PerfectNumber perfect = new PerfectNumber();
                         perfect.number();
+                        break;
+                    case 3:
+                        PrimeNumber number = new PrimeNumber();
+                        number.prime();
                         break;
                     default:
                         Console.WriteLine("Wrong Input");
