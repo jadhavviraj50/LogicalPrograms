@@ -8,7 +8,7 @@ namespace LogicalPrograms
 
             while (true)
             {
-                Console.WriteLine("Select Number\n1)LogicalPrograms\n2)PerfectNumber\n3)PrimeNumber\n4)ReverseNumber");
+                Console.WriteLine("\nSelect Number\n1)LogicalPrograms\n2)PerfectNumber\n3)PrimeNumber\n4)ReverseNumber\n5)CouponNumber");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -27,6 +27,10 @@ namespace LogicalPrograms
                     case 4:
                         ReverseNumber num = new ReverseNumber();
                         num.reverseNumber();
+                        break;
+                    case 5:
+                        CouponNumber test = new CouponNumber();
+                        test.coupon();
                         break;
                     default:
                         Console.WriteLine("Wrong Input");
