@@ -8,7 +8,7 @@ namespace LogicalPrograms
 
             while (true)
             {
-                Console.WriteLine("\nSelect Number\n1)LogicalPrograms\n2)PerfectNumber\n3)PrimeNumber\n4)ReverseNumber\n5)CouponNumber");
+                Console.WriteLine("\nSelect Number\n1)LogicalPrograms\n2)PerfectNumber\n3)PrimeNumber\n4)ReverseNumber\n5)CouponNumber\n6)SimulateStopwatch");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -31,6 +31,10 @@ namespace LogicalPrograms
                     case 5:
                         CouponNumber test = new CouponNumber();
                         test.coupon();
+                        break;
+                    case 6:
+                        SimulateStopwatch watch = new SimulateStopwatch();
+                        watch.stopwatch();
                         break;
                     default:
                         Console.WriteLine("Wrong Input");
